@@ -1,0 +1,57 @@
+name: Enhancement Request
+description: Suggest an improvement for an existing feature or system
+title: "[Enhancement] "
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for suggesting an enhancement! Please fill out the following information to help us understand your proposal better."
+
+  - type: input
+    id: enhancement-title
+    attributes:
+      label: Enhancement Title
+      description: Provide a clear and concise title.
+      placeholder: "[ENHANCEMENT] Brief description of the enhancement"
+    validations:
+      required: true
+
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: Enhancement Description
+      description: Detail the enhancement you'd like to see and how it improves the current system or feature.
+      placeholder: "Describe your enhancement request in detail here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-limitations
+    attributes:
+      label: Current Limitations
+      description: Describe any limitations or issues with the current feature or system that your enhancement addresses.
+      placeholder: "What limitations or issues with the current system does this enhancement address?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: potential-benefits
+    attributes:
+      label: Potential Benefits
+      description: Describe the benefits you anticipate from this enhancement.
+      placeholder: "What are the potential benefits of this enhancement?"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      description: Please confirm the following
+      options:
+        - label: I have searched the existing issues to ensure this enhancement has not already been proposed.
+          required: true
+        - label: I have provided as much detail as possible.
+          required: true
