@@ -1,5 +1,7 @@
 ---
 name: Bug Report
-about: bug report template
+about: bug report detail
+title: "[Bug]: "
+labels: "bug"
 ---
 
